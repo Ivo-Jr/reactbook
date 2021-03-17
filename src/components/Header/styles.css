@@ -1,0 +1,22 @@
+.logo {
+    width: 150px;
+}
+
+.Menu {
+    /* width: 100%; */
+    height: 65px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+ 
+    background: #4A90E2;
+}
