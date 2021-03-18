@@ -1,6 +1,5 @@
 import React from 'react';
 import p1 from '../../assets/p1.png'
-import p2 from '../../assets/p2.png';
 import './styles.css'
 import Comment from '../Comment';
 
@@ -21,7 +20,7 @@ export default function Post() {
                 <p>Olá meu povo!</p>
             </div>
 
-            <Comment src={p2} />
+            <Comment />
       </div>
   )
 }
