@@ -1,9 +1,10 @@
 .post {
     background: #fff;
-    height: 200px;
+    height: 100%;
     width: 100%;
     box-shadow: 0 0 1em #dad5d5;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 .comment {
@@ -14,10 +15,8 @@
 }
 
 .avatar {
-    /* padding-top: 10px; */
     width: 30px;
     height: 30px;
-    /* border-radius: 10%; */
 }
 
 .postData {
@@ -43,6 +42,10 @@
     padding-bottom: 20px;
     font-size: 14px;
     color: #3d3939;
-    border-bottom: 1px solid #cec8c8;
 }
 
+hr {
+	width: 92%;
+	text-align: center;
+	margin: 0 auto ; 
+}

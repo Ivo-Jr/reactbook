@@ -20,7 +20,9 @@ export default function Post() {
                 <p>Olá meu povo!</p>
             </div>
 
+            <hr/>
+            
             <Comment />
       </div>
-  )
+    )
 }

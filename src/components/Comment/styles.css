@@ -1,8 +1,6 @@
 .avatar {
-    /* padding-top: 10px; */
     width: 30px;
     height: 30px;
-    /* border-radius: 10%; */
 }
 
 .content {
@@ -16,11 +14,12 @@
 }
 
 .commentContent {
-    margin: 0 2%;
+    margin: 0 4% 3% 2%;
     font-size: 13px;
     color: #3d3939;
     background-color: #EEEEEE;
     border-radius: 13px;
-    padding: 12px;
+    padding: 20px;
+    text-align: justify;
 }
 
