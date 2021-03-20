@@ -1,20 +1,34 @@
 import React from 'react';
-import p2 from '../../assets/p2.png'
+import user from '../../assets/user.png';
+import PropTypes from 'prop-types';
+
 import './styles.css'
 
-export default function Comment() {
-
-  const author = 'Natacha'
+export default function Comment({ author, content, url }) {
 
   return (
     <div className="comment">
 
-      <img className="avatar" src={p2} alt="p2"/>
+      <img className="avatar" src={author.avatar} alt="p2"/>
       <div className="commentContent">
-        <span className="nameAuthor">{author}</span>
-        <span style={{fontFamily: 'Helvetica'}}> A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;)A Rocket está sempre em busca de novos talentos! Nós ficamos ligados nas pessoas que se destacam nos bootcamps. Inclusive, 80% dos profissionais da Rocket foram alunos de aguma turma dos nossos bootcamps. ;) </span>
+        <span className="nameAuthor">{author.name}</span>
+        <span style={{fontFamily: 'Helvetica'}}> {content}</span>
+         <a href={url} target="_blank" style={{fontFamily: 'Helvetica'}}>{url}</a> 
       </div>
 
     </div>
   )
+}
+
+Comment.defaultProps = {
+  author: {
+      avatar: user,
+      name: 'user',
+  },
+  content: 'My comment'
+}
+
+Comment.propTypes = {
+  author: PropTypes.object,
+  content: PropTypes.string
 }

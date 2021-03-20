@@ -1,28 +1,57 @@
 import React from 'react';
-import p1 from '../../assets/p1.png'
-import './styles.css'
 import Comment from '../Comment';
+import PropTypes from 'prop-types';
+import user from '../../assets/user.png';
 
+import './styles.css'
 
-export default function Post() {
+export default function Post({author, date, content, coments }) {
   return(
       <div className="post">
 
           <div className="comment">
-              <img className="avatar" src={p1} alt="p1"/>
+              <img className="avatar" src={author.avatar} alt="p1"/>
               <div className="postData">
-                  <span className="author">Elon Musk</span>
-                  <span className="date">17 March 2021</span>
+                  <span className="author">{author.name}</span>
+                  <span className="date">{date}</span>
               </div>
           </div>
 
             <div className="postContent">
-                <p>Olá meu povo!</p>
+                <p>{content}</p>
             </div>
 
             <hr/>
             
-            <Comment />
+            <ul>
+                {coments.map(comment => 
+                    <Comment 
+                        key={comment.id}
+                        author={comment.author}
+                        content={comment.content}
+                        url={comment.url}
+                    />
+                )}
+
+            </ul>
+
       </div>
     )
+}
+
+
+Post.defaultProps = {
+    author: {
+        avatar: user,
+        name: 'user',
+    },
+    date: '17 Mar 2021',
+    content: 'My post'
+}
+
+Post.propTypes = {
+    author: PropTypes.object,
+    date: PropTypes.string,
+    content: PropTypes.string,
+    coments: PropTypes.array
 }

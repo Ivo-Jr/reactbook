@@ -5,7 +5,7 @@ import './styles.css'
 export default function Button() {
   return(
       <div className="perfil">
-        <button className="button" type="button">Meu Perfil</button>
+        <button className="button" type="button">My Profile</button>
         <CgProfile />
       </div>
   );
