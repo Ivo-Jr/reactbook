@@ -44,7 +44,6 @@ $ yarn or npm install
 $ yarn dev
 ```
 
-```
 
 ## :sunny: Result
 
