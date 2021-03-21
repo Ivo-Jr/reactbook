@@ -60,7 +60,7 @@ $ yarn dev
 
 ---
 
-Made with ♥ by Ivo Junior <a href="https://www.linkedin.com/in/jos%C3%A9-ivo-maciel-j%C3%BAnior-658136145/" target="_blank">[Get in touch!]</a>
+Made with ♥ by Ivo Junior :wave: <a href="https://www.linkedin.com/in/jos%C3%A9-ivo-maciel-j%C3%BAnior-658136145/" target="_blank">[Get in touch!]</a>
 
 [yarn]: https://yarnpkg.com/
 [vc]: https://code.visualstudio.com/
