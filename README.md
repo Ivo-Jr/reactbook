@@ -52,8 +52,6 @@ $ yarn dev
   <h1 align="center" style="display: flex; flex-direction:row;">
       <img   style="margin: 0 10px;" alt="prit1" src="src/assets/img/prt1.png" />
        <br>
-       <br>
-       <br>
       <img   style="margin: 0 10px;" alt="prt2" src="src/assets/img/prt2.png" />
       <br>
   </h1>     
